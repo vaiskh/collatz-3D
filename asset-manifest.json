@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/collatz-conjecture-3D/static/css/main.7f3a98f4.css",
+    "main.js": "/collatz-conjecture-3D/static/js/main.64eeca06.js",
+    "static/js/787.b582fed0.chunk.js": "/collatz-conjecture-3D/static/js/787.b582fed0.chunk.js",
+    "index.html": "/collatz-conjecture-3D/index.html",
+    "main.7f3a98f4.css.map": "/collatz-conjecture-3D/static/css/main.7f3a98f4.css.map",
+    "main.64eeca06.js.map": "/collatz-conjecture-3D/static/js/main.64eeca06.js.map",
+    "787.b582fed0.chunk.js.map": "/collatz-conjecture-3D/static/js/787.b582fed0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7f3a98f4.css",
+    "static/js/main.64eeca06.js"
+  ]
+}

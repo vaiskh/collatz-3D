@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.7f3a98f4.css","mappings":"AAAA,UAEI,QAAS,CACT,eACJ,CCJA,KAGI,qBAAuB,CADvB,YAAa,CADb,UAGJ","sources":["index.css","App.css"],"sourcesContent":["html,\nbody {\n    margin: 0;\n    overflow: hidden;\n}\n",".App {\r\n    width: 100%;\r\n    height: 100vh;\r\n    background-color: black;\r\n}\r\n"],"names":[],"sourceRoot":""}
