@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/collatz-conjecture-3D/static/css/main.7f3a98f4.css",
-    "main.js": "/collatz-conjecture-3D/static/js/main.64eeca06.js",
-    "static/js/787.b582fed0.chunk.js": "/collatz-conjecture-3D/static/js/787.b582fed0.chunk.js",
-    "index.html": "/collatz-conjecture-3D/index.html",
-    "main.7f3a98f4.css.map": "/collatz-conjecture-3D/static/css/main.7f3a98f4.css.map",
-    "main.64eeca06.js.map": "/collatz-conjecture-3D/static/js/main.64eeca06.js.map",
-    "787.b582fed0.chunk.js.map": "/collatz-conjecture-3D/static/js/787.b582fed0.chunk.js.map"
+    "main.css": "/collatz-3D/static/css/main.7f3a98f4.css",
+    "main.js": "/collatz-3D/static/js/main.a7e1d881.js",
+    "static/js/787.b582fed0.chunk.js": "/collatz-3D/static/js/787.b582fed0.chunk.js",
+    "index.html": "/collatz-3D/index.html",
+    "main.7f3a98f4.css.map": "/collatz-3D/static/css/main.7f3a98f4.css.map",
+    "main.a7e1d881.js.map": "/collatz-3D/static/js/main.a7e1d881.js.map",
+    "787.b582fed0.chunk.js.map": "/collatz-3D/static/js/787.b582fed0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7f3a98f4.css",
-    "static/js/main.64eeca06.js"
+    "static/js/main.a7e1d881.js"
   ]
 }
