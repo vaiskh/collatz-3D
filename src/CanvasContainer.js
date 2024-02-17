@@ -4,11 +4,10 @@ import * as THREE from "three";
 import { OrbitControls } from "@react-three/drei";
 import { getCollatzSequence } from "./helpers";
 
-
 const tubeGeometryParams = {
     extrusionSegments: 100,
     radiusSegments: 12,
-    radius: 1
+    radius: 1,
 };
 
 function createSplinePathFromCollatz(sequence, nodeDistance, bendAngle) {
@@ -26,7 +25,8 @@ function createSplinePathFromCollatz(sequence, nodeDistance, bendAngle) {
         } else {
             // const vector = new THREE.Vector3(prevPoint[0], prevPoint[1] + nodeDistance, 0)
             // console.log(vector)
-            relativeAngle = relativeAngle + (seq[i] % 2 === 0 ? bendAngle : -bendAngle);
+            relativeAngle =
+                relativeAngle + (seq[i] % 2 === 0 ? bendAngle : -bendAngle);
             // const axis = new THREE.Vector3(0,0,-1); // rotate around z axis
             // vector.applyAxisAngle(axis, relativeAngle);
             // pointX = vector.x;
@@ -49,15 +49,22 @@ const getNodeVectorsList = (n, nodeDistance, bendAngle) => {
     const vectorsList = [];
     for (let i = 2; i <= n; i++) {
         const seq = getCollatzSequence(i);
-        const vectors = createSplinePathFromCollatz(seq, nodeDistance, bendAngle);
+        const vectors = createSplinePathFromCollatz(
+            seq,
+            nodeDistance,
+            bendAngle
+        );
         vectorsList.push(vectors);
     }
     return vectorsList;
 };
 
 const CanvasContainer = ({ nodeDistance, bendAngle, sequenceLimit }) => {
-
-    const vectorsList = getNodeVectorsList(sequenceLimit, nodeDistance, bendAngle);
+    const vectorsList = getNodeVectorsList(
+        sequenceLimit,
+        nodeDistance,
+        bendAngle
+    );
 
     return (
         <Canvas>
@@ -68,17 +75,27 @@ const CanvasContainer = ({ nodeDistance, bendAngle, sequenceLimit }) => {
                     const spline = new THREE.CatmullRomCurve3(vectors);
                     spline.curveType = "catmullrom";
                     spline.closed = false;
-                    const randRotX = Math.random()/2;
-                    const randRotY = Math.random()/2;
-                    const randRotZ = Math.random()/2;
-                    return <mesh key={index} rotation-x={randRotX} rotation-y={randRotY} rotation-z={randRotZ}>
-                        <tubeGeometry args={[spline,
-                            tubeGeometryParams.extrusionSegments,
-                            tubeGeometryParams.radius,
-                            tubeGeometryParams.radiusSegments]} />
-                        <meshNormalMaterial side={THREE.DoubleSide} />
-                    </mesh>
-
+                    const randRotX = Math.random() / 2;
+                    const randRotY = Math.random() / 2;
+                    const randRotZ = Math.random() / 2;
+                    return (
+                        <mesh
+                            key={index}
+                            rotation-x={randRotX}
+                            rotation-y={randRotY}
+                            rotation-z={randRotZ}
+                        >
+                            <tubeGeometry
+                                args={[
+                                    spline,
+                                    tubeGeometryParams.extrusionSegments,
+                                    tubeGeometryParams.radius,
+                                    tubeGeometryParams.radiusSegments,
+                                ]}
+                            />
+                            <meshNormalMaterial side={THREE.DoubleSide} />
+                        </mesh>
+                    );
                 })}
             </group>
         </Canvas>
